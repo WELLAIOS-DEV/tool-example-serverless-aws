@@ -92,3 +92,7 @@ In a practical production setup:
 ## Acknowledgement
 
 This demo server implementation is based on and significantly inspired by the excellent work from the [Lambda MCP Server](https://github.com/mikegc-aws/Lambda-MCP-Server) repository.
+
+## License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file.
