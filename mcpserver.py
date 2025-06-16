@@ -5,13 +5,14 @@ from lambda_mcp.lambda_mcp import LambdaMCPServer
 # This server will host our tools and handle requests from the WELLAIOS engine.
 mcp_server = LambdaMCPServer(name="wellaios-demo", version="1.0.0")
 
+
 @mcp_server.tool()
 def get_my_id(lambda_event: Dict[str, Any]) -> str:
     """
     Retrieves the ID of the current user.
 
-    This tool requires no parameters. 
-    
+    This tool requires no parameters.
+
     Returns:
         The ID of the current user as a string.
     """

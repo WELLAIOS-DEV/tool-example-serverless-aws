@@ -155,8 +155,9 @@ class LambdaMCPServer:
                 if param_name in arg_descriptions:
                     param_schema["description"] = arg_descriptions[param_name]
 
-                properties[param_name] = param_schema
-                required.append(param_name)
+                if param_name not in ["lambda_context", "lambda_event"]:
+                    properties[param_name] = param_schema
+                    required.append(param_name)
 
             # Create tool schema
             tool_schema = {

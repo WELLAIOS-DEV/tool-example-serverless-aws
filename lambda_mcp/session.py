@@ -8,11 +8,12 @@ This current setup is a basic placeholder designed for a single-user demo.
 
 from typing import Optional, Dict, Any
 
+
 class SessionManager:
     """
     Manages user sessions for the MCP server.
     """
-    
+
     def __init__(self):
         """
         Initialize the session manager
@@ -20,7 +21,7 @@ class SessionManager:
 
     def create_session(self, session_data: Optional[Dict[str, Any]] = None) -> str:
         """Create a new session
-                
+
         Returns:
             The session ID
         """
